@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Cormorant:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
   border: 0;
-  color: white;
+  background-color: rgb(255, 255, 255);
 }
 .head_write {
-  font-family: "Comporant", serif;
+  font-family: "Mulish", sans-serif;
   font-size: 20px;
 }
 .it_keeps_head {\
@@ -24,8 +26,8 @@ body {
   text-align: center;
 }
 .tablePreviewText {
-  font-family: "Comporant", serif;
-  font-size: 14px;
+  font-family: "Mulish", sans-serif;
+  font-size: 13px;
   font-weight: lighter;
 }
 .lineTitle1 {
@@ -35,6 +37,23 @@ body {
   padding-left: 10px;
   opacity: 0.2
 }
+.selectKeeper {
+  max-width: 220px;
+  margin: auto;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  font-size: 14px;
+}
+.selects1 {
+  margin-left: 10px;
+  display: inline-block;
+  align: left;
+  text-decoration: none;
+  color: #000000;
+}
+.selects1:hover{
+  opacity: 0.5;
+}
 .lineTitle2 {
   font-family: "Comforter Brush", cursive;
   color: black;
@@ -42,29 +61,85 @@ body {
   padding-left: 10px;
   opacity: 0.2
 }
+.productKeeper {
+  width: 230px;
+  margin: auto;
+}
 .product {
   display: inline-block;
+  width: 110px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+.product:hover {
+  transform: scale(0.95);
 }
 .productImage {
   height: 100px;
   width: 100px;
+  margin: auto;
+}
+.productName {
+  font-family: "Mulish", sans-serif;
+  font-size: 13px;
+  padding-left: 5px;
+}
+.productAbout {
+  font-family: "Mulish", sans-serif;
+  font-size: 11px;
+  color: #710000;
+  padding-left: 5px;
 }
 .productPrice {
-  font-family: "Comporant", serif;
-  font-size: 14px;
+  font-family: "Mulish", sans-serif;
+  font-size: 13px;
+  padding-left: 5px;
+}
+.buyIt {
+  font-family: "Mulish", sans-serif;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  background-color: #ca6b6b;
+  color: white;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.productInfo {
+  font-family: "Mulish", sans-serif;
+  font-style: italic;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e0e0e0;
+  color: white;
+  margin-bottom: 5px;
 }
 .support {
   padding: 10px;
-  font-family: "Comporant", serif;
+  font-family: "Mulish", sans-serif;
   font-size: 14px;
+  border-radius: 5px;
 }
 .formPart {
-  font-family: "Comporant", serif;
+  font-family: "Mulish", sans-serif;
   font-size: 14px;
-  width: 120px
+  width: 120px;
+  border-radius: 5px;
+  border-color: #ca6b6b
 }
 .footerText {
-  font-family: "Comporant", serif;
-  font-size: 14px;
+  font-family: "Mulish", sans-serif;
+  font-size: 13px;
   padding: 10px;
+  text-align: center;
 }
