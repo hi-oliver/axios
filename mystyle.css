@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Hepta+Slab:wght@1..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -8,8 +8,12 @@ body {
   border: 0;
   background-color: rgb(255, 255, 255);
 }
+.logotype {
+  height: 20px;
+  margin: 10px 0 10px 0;
+}
 .optional {
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,109,109,1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(195,89,226,0) 100%);
 }
 .head_write {
   font-family: "Mulish", sans-serif;
@@ -25,44 +29,94 @@ body {
   -webkit-backdrop-filter: blur(20px) saturate(100%) contrast(100%) brightness(100%);
   z-index: 1001;
 }
+.marquee_keep {
+  max-width: 230px;
+  margin: auto;
+  height: 25px;
+}
+.marquee1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  vertical-align: middle;
+}
 .about {
   text-align: center;
 }
-.tablePreviewText {
+.prewiev_one {
+  max-width: 230px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.3);
+  margin: auto;
+  padding: 10px 5px 10px 5px;
+}
+.prewiev_image {
+  width: 150px;
+}
+.prewiev_title {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 5px 5px 0px 5px;
+}
+.prewiev_text {
   font-family: "Mulish", sans-serif;
   font-size: 13px;
   font-weight: lighter;
+  padding: 5px 5px 5px 5px;
 }
-.lineTitle1 {
-  font-family: "Comforter Brush", cursive;
-  color: red;
-  font-size: 30px;
-  padding-left: 10px;
-  opacity: 0.8
-}
-.selectKeeper {
-  max-width: 220px;
-  margin: auto;
+.prewiev_url {
   font-family: "Mulish", sans-serif;
-  color: black;
-  font-size: 14px;
-}
-.selects1 {
-  margin-left: 10px;
-  display: inline-block;
-  align: left;
+  font-size: 16px;
+  font-weight: normal;
+  color: #8413A4;
   text-decoration: none;
-  color: #000000;
+  padding: 5px 5px 5px 5px;
 }
-.selects1:hover{
-  opacity: 0.5;
+.presentor {
+  margin: auto;
+  max-width: 230px;
+  border-radius: 10px;
+  background-color: #efd3ff;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.lineTitle2 {
-  font-family: "Comforter Brush", cursive;
-  color: black;
-  font-size: 30px;
+.lineTitle {
+  font-family: "Mulish", sans-serif;
+  color: #000;
+  font-size: 15px;
   padding-left: 10px;
-  opacity: 0.8
+}
+.selector {
+  margin: auto;
+  max-width: 230px;
+  border-radius: 10px;
+  background-color: #f3f6f4;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.selectorat {
+  margin: auto;
+  max-width: 230px;
+  border-radius: 10px;
+  background-color: #f3f6f4;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.selects {
+  font-family: "Mulish", sans-serif;
+  color: #000;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.selector:hover {
+  background-color: #eeeeee;
 }
 .productKeeper {
   width: 230px;
@@ -95,7 +149,7 @@ body {
 .productAbout {
   font-family: "Mulish", sans-serif;
   font-size: 11px;
-  color: #710000;
+  color: #8413A4;
   padding-left: 5px;
 }
 .productPrice {
@@ -109,7 +163,7 @@ body {
   border-radius: 5px;
   border: none;
   font-size: 13px;
-  background-color: #ca6b6b;
+  background-color: #8413A4;
   color: white;
   height: 20px;
   margin-top: 5px;
@@ -138,9 +192,9 @@ body {
 .formPart {
   font-family: "Mulish", sans-serif;
   font-size: 14px;
-  width: 120px;
+  max-width: 230px;
   border-radius: 5px;
-  border-color: #ca6b6b
+  border-color: #efd3ff;
 }
 .footerText {
   font-family: "Mulish", sans-serif;
