@@ -202,3 +202,92 @@ body {
   padding: 10px;
   text-align: center;
 }
+.window_of_product {
+  display: none;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+}
+#product1:target {display: block}
+#product2:target {display: block}
+#product3:target {display: block}
+#product4:target {display: block}
+#product5:target {display: block}
+#product6:target {display: block}
+#product7:target {display: block}
+#product8:target {display: block}
+#product9:target {display: block}
+#product10:target {display: block}
+.image_in_window {
+  width: 200px;
+  margin: auto;
+  display: flex;
+  -justify-content: center;
+}
+.clsIt {
+  font-family: "Mulish", sans-serif;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  background-color: #f3f6f4;
+  color: #000;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.window_title {
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  color:#8413A4;
+  display: flex;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.window_descr {
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  color: #000;
+  display: flex;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.window_details {
+  font-family: "Mulish", sans-serif;
+  font-size: 12px;
+  color:#999999;
+  display: flex;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.window_price {
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  color: #8413A4;
+  display: flex;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.WbuyIt {
+  font-family: "Mulish", sans-serif;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  background-color:#8413A4;
+  color: #fff;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
