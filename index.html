@@ -56,7 +56,7 @@
             <div class="selector" onclick="location.href='hConstr.html'">
               <a class="selects">Стройматериалы</a>
             </div>
-            <div class="selector" onclick="location.href='illbuildit.html'">
+          <!--  <div class="selector" onclick="location.href='illbuildit.html'">
               <a class="selects">Электричество и свет</a>
             </div>
             <div class="selector" onclick="location.href='illbuildit.html'">
@@ -67,27 +67,30 @@
             </div>
             <div class="selector" onclick="location.href='illbuildit.html'">
               <a class="selects">Посуда и утварь</a>
-            </div>
+            </div> -->
           <div class="presentor">
             <a class="lineTitle">Наполнение</a>
           </div>
-            <div class="selector" onclick="location.href='illbuildit.html'">
+        <!--    <div class="selector" onclick="location.href='illbuildit.html'">
               <a class="selects">Декор</a>
-            </div>
+            </div> -->
             <div class="selector" onclick="location.href='toys.html'">
               <a class="selects">Игрушки</a>
             </div>
           <div class="presentor">
             <a class="lineTitle">Другое</a>
           </div>
-            <div class="selector" onclick="location.href='illbuildit.html'">
-              <a class="selects">Условия доставки и VIP</a>
+            <div class="selector" onclick="location.href='account.html'">
+              <a class="selects">Личный кабинет</a>
             </div>
+          <!--  <div class="selector" onclick="location.href='illbuildit.html'">
+              <a class="selects">Условия доставки и VIP</a>
+            </div> -->
             <div class="selector" onclick="location.href='#sprt'">
               <a class="selects">Связь с нами</a>
             </div>
       </section>
-      </section>
+      <br><br>
       <section class="Forms" id="sprt">
         <div class="presentor">
           <a class="lineTitle">Проблема или вопрос?</a>
@@ -95,36 +98,38 @@
         <div class="selectorat">
           <a class="lineTitle">Напишите нам!</a>
         </div>
-        <div align="center">
-          <form class="support" action="index.html" method="post">
-            <input class="formPart" type="text" name="NAME" value=""><br>
+        <div align="center" class="supportKeeper">
+          <div align="left">
+          <form class="support" action="" method="">
             Имя <br>
-            <input class="formPart" type="text" name="SURNAME" value=""><br>
-            Фамилия <br>
-            <input class="formPart" type="email" name="EMAIL" value=""><br>
+            <input class="formPart" type="text" name="NAME" value=""><br>
             E-mail<br>
-            <input class="formPart" type="tel" name="PHONE" value=""><br>
+            <input class="formPart" type="email" name="EMAIL" value=""><br>
             Номер телефона <br>
+            <input class="formPart" type="tel" name="PHONE" value=""><br>
+            Текст обращения <br>
             <input class="formPart" type="textarea" name="DESCRIPTION" value=""><br>
-            Опишите проблему <br><br>
+            <br>
             <label><input type="checkbox" name="FIRSTAGREE" value="1">Вы согласны на обработку своих данных</label><br>
             <label><input type="checkbox" name="SECONDAGREE" value="0">Хотите получать рассылку от магазина</label>
-            <br><br><input class="buyIt" type="submit" name="RESULT" value="Отправить">
+            <br><br><input class="buyIt" type="submit" onclick="formIsDone()" name="RESULT" value="Отправить">
           </form>
+          </div>
         </div>
         <hr>
       </section>
-      </div>
     </main>
     <footer>
       <div class="footerText">
         Общество с неограниченной ответственностью "Аксиос Прайс" 2024-2025<br>Сайт разработал: СИЗОВ А. В.</div>
     </footer>
-  <!--  <script type="text/javascript">
-    let btn = document.getElementById("dialog");
-      btn.addEventListener("click", ()=>{
-      alert("Прости, я ещё не разработал этот раздел. Но уже скоро!");
-    });
-    </script> -->
   </body>
+  <script type="text/javascript">
+    if (window.innerWidth > 400) {
+      alert('К сожалению наш сайт не адаптирован для планшетов и ноутбуков. Вскоре мы это исправим!')
+    }
+    function formIsDone() {
+      alert('Форма успешно отправлена')
+    }
+  </script>
 </html>
