@@ -12,6 +12,14 @@ body {
   height: 20px;
   margin: 10px 0 10px 0;
 }
+.newYearMarquee {
+  height: 25px;
+}
+.newYearLights {
+  text-align: center;
+  margin: auto;
+  max-width: 230px;
+}
 .optional {
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(195,89,226,0) 100%);
 }
@@ -32,13 +40,13 @@ body {
 .marquee_keep {
   max-width: 230px;
   margin: auto;
-  height: 25px;
+  height: 30px;
 }
 .marquee1 {
   font-family: "Mulish", sans-serif;
   font-size: 15px;
   font-weight: normal;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .about {
   text-align: center;
@@ -48,6 +56,13 @@ body {
   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.3);
   margin: auto;
   padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+.prewiev_one:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px 5px rgba(132, 19, 164, 0.1);
+
 }
 .prewiev_image {
   width: 150px;
@@ -202,6 +217,10 @@ body {
   border-style: solid;
   border-color: #efd3ff;
 }
+.footerLogotype {
+  align: center;
+  width: 100px;
+}
 .footerText {
   font-family: "Mulish", sans-serif;
   font-size: 13px;
@@ -299,7 +318,7 @@ body {
 }
 .accountPresentor {
   margin: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   display: none;
   max-width: 230px;
   text-align: center;

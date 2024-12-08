@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>АXIOS - любимый магазин</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" href="favicon.png">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
     </style>
@@ -15,22 +16,22 @@
         <table style="width: 100%; padding: 0; margin: 0">
           <tr>
             <th class="head_write" style="color: #8413A4;">//</th>
-            <th><img class="logotype" src="images/logotype.png" alt="LOGO"></th>
+            <th><a href="index.html"><img class="logotype" src="images/logotype.png" alt="LOGO"></a></th>
             <th class="head_write" style="color: black">//</th>
           </tr>
         </table>
       </div>
     </header>
     <main style="padding-top: 45px">
-      <div class="marquee_keep"><marquee class="marquee1">15% бонусов за покупку с 21:30 до 22:00</marquee></div>
+      <div class="marquee_keep"><marquee class="marquee1"><img class="newYearMarquee" src="images/newYearMarquee.png" alt="LOGOTYPE"></marquee></div>
       <section class="about">
-        <div class="prewiev_one">
+        <div class="prewiev_one" onclick="location.href='toys.html'">
           <img class="prewiev_image" src="images/p1.png" alt="">
           <div class="prewiev_title">Мишка Шайни в подарок</div>
           <div class="prewiev_text">при покупке от 12 999</div>
           <a href="#menu" class="prewiev_url">Магазин →</a>
         </div><br>
-        <div class="prewiev_one">
+        <div class="prewiev_one" onclick="location.href='illbuildit.html'">
           <img class="prewiev_image" src="images/card.png" alt="">
           <div class="prewiev_title">VIP карта</div>
           <div class="prewiev_text">станьте постоянным клиентом axios
@@ -41,7 +42,7 @@
           <br>Скидка 10% действует в диапазоне от 5 999 до 10 999
           <br>** Доставка бесплатная на период пользования картой согласно условиям оформления
         </div><br>
-        <div class="prewiev_one">
+        <div class="prewiev_one" onclick="location.href='sales.html'">
           <img class="prewiev_image" src="images/time.png" alt="">
           <div class="prewiev_title">50% скидка в новый год</div>
           <div class="prewiev_text">С 07:00 до 07:50 31 декабря скидка 50% на всю новую продукцию</div>
@@ -50,7 +51,8 @@
       </section>
       <section class="selectYourLine" id="menu">
         <br><br><br>
-        <div class="presentor">
+      <div style="text-align:center"><img class="newYearLights" src="images/newYearLights.png" alt=""></div>
+        <div class="presentor" style="margin-top: 0;">
           <a class="lineTitle">Для дома</a>
         </div>
             <div class="selector" onclick="location.href='hConstr.html'">
@@ -121,6 +123,7 @@
     </main>
     <footer>
       <div class="footerText">
+        <img class="footerLogotype" src="images/footerLogotype.png" alt="LOGOTYPE"><br><br>
         Общество с неограниченной ответственностью "Аксиос Прайс" 2024-2025<br>Сайт разработал: СИЗОВ А. В.</div>
     </footer>
   </body>

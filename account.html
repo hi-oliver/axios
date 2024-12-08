@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>АXIOS - любимый магазин</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" href="favicon.png">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
     </style>
@@ -15,7 +16,7 @@
         <table style="width: 100%; padding: 0; margin: 0">
           <tr>
             <th class="head_write" style="color: #8413A4;">//</th>
-            <th><img class="logotype" src="images/logotype.png" alt="LOGO"></th>
+            <th><a href="index.html"><img class="logotype" src="images/logotype.png" alt="LOGO"></a></th>
             <th class="head_write" style="color: black">//</th>
           </tr>
         </table>
@@ -23,7 +24,8 @@
     </header>
     <main style="padding-top: 45px">
       <div class="Forms" id="formKeeper">
-        <div class="presentor">
+        <div style="text-align:center"><img class="newYearLights" src="images/newYearLights.png" alt=""></div>
+        <div class="presentor" style="margin-top: 0;">
           <a class="lineTitle">Личный кабинет</a>
         </div>
             <div class="selector" onclick="location.href='index.html#menu'">
@@ -43,7 +45,6 @@
         <hr>
       </div>
       <div class="accountPresentor" id="accountPresentor">
-        <div class="marquee_keep"><marquee class="marquee1">Кешбэк 20% в новогодние праздники</marquee></div>
         <div class="presentor">
           <a class="lineTitle">Личный кабинет</a>
         </div>
@@ -61,13 +62,14 @@
     </main>
     <footer>
       <div class="footerText">
+        <img class="footerLogotype" src="images/footerLogotype.png" alt="LOGOTYPE"><br><br>
         Общество с неограниченной ответственностью "Аксиос Прайс" 2024-2025<br>Сайт разработал: СИЗОВ А. В.</div>
     </footer>
   </body>
   <script>
     let enterIsOccured = 0
     let shopsQty = 2
-    let bonusesQty = 0
+    let bonusesQty = 1500
     const form = document.getElementById('accountForm');
     form.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -77,9 +79,9 @@
       if (login === 'Dmitriy' && password === 'XXXxxx') {
         enterIsOccured = 1
       }
-      setEnterValue()
+      setEnterValue(login)
     })
-    function setEnterValue() {
+    function setEnterValue(login) {
       if (enterIsOccured === 1) {
         console.log('sucsessful')
         let formKeeper = document.getElementById('formKeeper')
@@ -88,7 +90,7 @@
         let accountPresentor = document.getElementById('accountPresentor')
         accountPresentor.style.display = 'block';
         let nameOfPerson = document.getElementById('nameOfPerson')
-        nameOfPerson.innerText = 'Dmitriy'
+        nameOfPerson.innerText = login
       } else {
         console.log('rejected')
       }
