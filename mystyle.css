@@ -12,9 +12,6 @@ body {
   height: 20px;
   margin: 10px 0 10px 0;
 }
-.newYearMarquee {
-  height: 25px;
-}
 .newYearLights {
   text-align: center;
   margin: auto;
@@ -38,7 +35,7 @@ body {
   z-index: 1001;
 }
 .marquee_keep {
-  max-width: 230px;
+  max-width: 250px;
   margin: auto;
   height: 30px;
 }
@@ -60,6 +57,39 @@ body {
   transition: transform 0.2s;
 }
 .prewiev_one:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px 5px rgba(132, 19, 164, 0.1);
+
+}
+.prewiev_two {
+  max-width: 230px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.3);
+  margin: auto;
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  background-image: url("images/newYear_Backgr.png");
+  background-size: cover;
+  background-position: center;
+}
+.prewiev_two:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px 5px rgba(132, 19, 164, 0.1);
+
+}
+.prewiev_three {
+  max-width: 230px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.3);
+  margin: auto;
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  background-image: url("images/snowman.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.prewiev_three:hover {
   transform: scale(0.95);
   box-shadow: 0 0 10px 5px rgba(132, 19, 164, 0.1);
 
