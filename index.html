@@ -10,28 +10,27 @@
       @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
     </style>
   </head>
-  <body>
+  <body id="optionalBody">
     <header>
       <div class="it_keeps_head">
         <table style="width: 100%; padding: 0; margin: 0">
           <tr>
-            <th class="head_write" style="color: #8413A4;">//</th>
+            <th class="head_write" style="color: #8413A4;"></th>
             <th><a href="index.html"><img class="logotype" src="images/logotype.png" alt="LOGO"></a></th>
-            <th class="head_write" style="color: black">//</th>
+            <th class="head_write" style="color: black"></th>
           </tr>
         </table>
       </div>
     </header>
-    <main style="padding-top: 45px">
-      <br>
+    <main style="padding-top: 50px">
       <section class="about">
         <div class="prewiev_two" onclick="location.href='#menu'">
           <div class="prewiev_title" style="text-align: left">Новый год с AXIOS!</div>
           <div class="prewiev_text" style="text-align: left; margin-right: 70px">
             Три причины выбрать нас:<br>
-            1. Скидка 50% в утро нового года<br>
-            2. Вкусные подарки при покупке с детьми<br>
-            3. Отличная атмосфера в магазинах<br>
+            ✓ Скидка 50% в утро нового года<br>
+            ✓ Вкусные подарки при покупке с детьми<br>
+            ✓ Бесплатная доставка в новый год<br>
           </div>
           <a href="#menu" class="prewiev_url">Праздновать →</a>
         </div><br>
@@ -42,35 +41,29 @@
           <br>С VIP вы получаете скидку 10% на все покупки от 5 999 * а также бесплатную доставку навсегда **</div>
           <a href="" class="prewiev_url">Подробнее →</a>
         </div><br>
-        <div class="prewiev_text">* Карта оформляется если вы совершили покупку от 47 999
+        <div class="prewiev_text" style="text-align: left; font-size: 12px; font-weight: lighter; margin: 5px">* Карта оформляется если вы совершили покупку от 47 999
           <br>Скидка 10% действует в диапазоне от 5 999 до 10 999
           <br>** Доставка бесплатная на период пользования картой согласно условиям оформления
         </div><br>
-        <div class="prewiev_one" onclick="location.href=''">
+        <div class="prewiev_three" style="box-shadow: none">
           <img class="prewiev_image" src="images/time.png" alt="">
           <div class="prewiev_title">
             Стрелки показывают...<br>
-            <font style="font-size: 25px">Новый год?!</font>
+            <font style="font-size: 30px">Новый год?!</font>
           </div>
           <div class="prewiev_text">С 07:00 до 07:50 31 декабря скидка 50% на всю новую продукцию!</div>
           <a href="" class="prewiev_url">Подробнее →</a>
-        </div><br>
-        <div class="prewiev_three" onclick="location.href='#menu'">
-          <div class="prewiev_title" style="text-align: left">Ремонт за снеговик!</div>
-          <div class="prewiev_text" style="text-align: left; margin-right: 70px">
-            Да-да, мы не сошли с ума:<br>
-            1. Слепите снеговика на территории AXIOS<br>
-            2. Жюри выберет лучший снеговик<br>
-            3. Мы делаем вам капитальный ремонт в квартире или в доме<br>
-            И дед мороз существует!<br>
-          </div>
-        </div><br>
+        </div>
+
       </section>
+
       <section class="selectYourLine" id="menu">
-        <br><br><br>
-      <div style="text-align:center"><img class="newYearLights" src="images/newYearLights.png" alt=""></div>
+
+        <br><br>
+<div class="bottomToTopGradient"></div>
+<br>
         <div class="presentor" style="margin-top: 0;">
-          <a class="lineTitle">Для дома</a>
+          <a class="presentorTitle">Для дома</a>
         </div>
             <div class="selector" onclick="location.href='hConstr.html'">
               <a class="selects">Стройматериалы</a>
@@ -88,16 +81,16 @@
               <a class="selects">Посуда и утварь</a>
             </div> -->
           <div class="presentor">
-            <a class="lineTitle">Наполнение</a>
+            <a class="presentorTitle">Наполнение</a>
           </div>
         <!--    <div class="selector" onclick="location.href='illbuildit.html'">
               <a class="selects">Декор</a>
             </div> -->
             <div class="selector" onclick="location.href='toys.html'">
-              <a class="selects">Игрушки</a>
+              <a class="selects">Плюшевые игрушки</a>
             </div>
           <div class="presentor">
-            <a class="lineTitle">Другое</a>
+            <a class="presentorTitle">Другое</a>
           </div>
             <div class="selector" onclick="location.href='account.html'">
               <a class="selects">Личный кабинет</a>
@@ -108,11 +101,11 @@
             <div class="selector" onclick="location.href='#sprt'">
               <a class="selects">Связь с нами</a>
             </div>
-      </section>
-      <br><br>
+      </section><br><br>
+      <div class="topToBottomGradient"></div>
       <section class="Forms" id="sprt">
         <div class="presentor">
-          <a class="lineTitle">Проблема или вопрос?</a>
+          <a class="presentorTitle">Проблема или вопрос?</a>
         </div>
         <div class="selectorat">
           <a class="lineTitle">Напишите нам!</a>
@@ -135,10 +128,11 @@
           </form>
           </div>
         </div>
-        <hr>
       </section>
     </main>
+    <div class="footerGradient"></div>
     <footer>
+      <br>
       <div class="footerText">
         <img class="footerLogotype" src="images/footerLogotype.png" alt="LOGOTYPE"><br><br>
         Общество с неограниченной ответственностью "Аксиос Прайс" 2024-2025<br>Сайт разработал: СИЗОВ А. В.</div>
@@ -147,6 +141,7 @@
   <script type="text/javascript">
     if (window.innerWidth > 400) {
       alert('К сожалению наш сайт не адаптирован для планшетов и ноутбуков. Вскоре мы это исправим!')
+      document.getElementById('optionalBody').style.display = 'none';
     }
     function formIsDone() {
       alert('Форма успешно отправлена')

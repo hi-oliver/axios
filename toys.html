@@ -15,9 +15,9 @@
       <div class="it_keeps_head">
         <table style="width: 100%; padding: 0; margin: 0">
           <tr>
-            <th class="head_write" style="color: #8413A4;">//</th>
+            <th class="head_write" style="color: #8413A4;"></th>
             <th><a href="index.html"><img class="logotype" src="images/logotype.png" alt="LOGO"></a></th>
-            <th class="head_write" style="color: black">//</th>
+            <th class="head_write" style="color: black"></th>
           </tr>
         </table>
       </div>
@@ -25,19 +25,19 @@
     <main style="padding-top: 45px">
       <div class="marquee_keep"><marquee class="marquee1">Бесплатная доставка с VIP картой</marquee></div>
       <section class="selectYourLine">
-        <div style="text-align:center"><img class="newYearLights" src="images/newYearLights.png" alt=""></div>
+
         <div class="presentor" style="margin-top: 0;">
-          <a class="lineTitle">Игрушки</a>
+          <a class="presentorTitle">Плюшевые игрушки</a>
         </div>
             <div class="selector" onclick="location.href='index.html#menu'">
               <a class="selects">Назад</a>
             </div><br>
       </section>
       <section class="about">
-        <div class="prewiev_one">
-          <img class="prewiev_image" src="images/constr/lustra.webp" alt="">
-          <div class="prewiev_title">Электричество в подарок</div>
-          <div class="prewiev_text">при покупке от 899 999 электрическая проводка, светильники и люстра в подарок</div>
+        <div class="prewiev_one" style="box-shadow: none;">
+          <img class="prewiev_image" src="images/p1.png" alt="">
+          <div class="prewiev_title">Подарим Шайни!</div>
+          <div class="prewiev_text">Если сумма вашей покупки будет 10 999 RUB и более</div>
         </div><br>
       </section>
       <section class="general">
@@ -89,32 +89,32 @@
             </div>
           </div>
       </section>
+      <br><br>
+      <div class="topToBottomGradient"></div>
       <section class="Forms" id="support">
         <div class="presentor">
-          <a class="lineTitle">Не нашли что искали?</a>
+          <a class="presentorTitle">Не нашли что искали?</a>
         </div>
         <div class="selectorat">
           <a class="lineTitle">Сделаем на заказ!</a>
         </div>
-        <div align="center">
-          <form class="support" action="index.html" method="post">
-            <input class="formPart" type="text" name="NAME" value=""><br>
+        <div align="center" class="supportKeeper">
+          <div align="left">
+          <form class="support" action="#" method="#">
             Имя <br>
             <input class="formPart" type="text" name="SURNAME" value=""><br>
-            Отчество <br>
-            <input class="formPart" type="email" name="EMAIL" value=""><br>
             E-mail<br>
-            <input class="formPart" type="tel" name="PHONE" value=""><br>
+            <input class="formPart" type="email" name="EMAIL" value=""><br>
             Номер телефона <br>
+            <input class="formPart" type="tel" name="PHONE" value=""><br>
+            Искомый товар <br>
             <input class="formPart" type="textarea" name="DESCRIPTION" value=""><br>
-            Искомый товар <br><br>
-            <label><input type="checkbox" name="FIRSTAGREE" value="1">Вы согласны на обработку своих данных</label><br>
+            <br><label><input type="checkbox" name="FIRSTAGREE" value="1">Вы согласны на обработку своих данных</label><br>
             <label><input type="checkbox" name="SECONDAGREE" value="0">Хотите получать рассылку от магазина</label>
-            <br><br><input class="buyIt" type="submit" name="RESULT" value="Отправить">
+            <br><br><input class="buyIt" type="submit" onclick="formIsDone()" name="RESULT" value="Отправить">
           </form>
         </div>
-        </div>
-        <hr>
+      </div>
       </section>
       <div id="product1" class="window_of_product">
         <a href="#"><button id="dialog" class="clsIt" type="button" name="button">Закрыть</button></a>
@@ -225,7 +225,9 @@
         <a href="#"><button id="dialog" class="WbuyIt" type="button" name="button">В корзину</button></a>
       </div>
     </main>
+    <div class="footerGradient"></div>
     <footer>
+      <br>
       <div class="footerText">
         <img class="footerLogotype" src="images/footerLogotype.png" alt="LOGOTYPE"><br><br>
         Общество с неограниченной ответственностью "Аксиос Прайс" 2024-2025<br>Сайт разработал: СИЗОВ А. В.</div>
