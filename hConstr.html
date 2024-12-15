@@ -11,6 +11,8 @@
     </style>
   </head>
   <body>
+    <script src='./scripts/shopbase.js'>
+    </script>
     <header>
       <div class="it_keeps_head">
         <table style="width: 100%; padding: 0; margin: 0">
@@ -34,12 +36,13 @@
             </div><br>
       </section>
       <section class="about">
-        <div class="prewiev_one">
-          <img class="prewiev_image" src="images/constr/kirpich.png" alt="">
+        <div class="prewiev_one" style="margin-bottom: 10px;">
           <div class="prewiev_title">Кирпич за 10 RUB</div>
           <div class="prewiev_text">При покупке от 10 блоков составная стоимость одного кирпича составит 10 RUB</div>
+            <img class="prewiev_image" src="images/constr/kirpich.png" alt="">
         </div>
-        <div class="prewiev_one" style="box-shadow: none;">
+        <div class="bottomToTopGradient"></div>
+        <div class="prewiev_one" style="box-shadow: none; margin-top: 0; padding-top:0">
           <img class="prewiev_image" src="images/constr/lustra.png" alt="" style="margin-top: 0; padding-top: 0"><br>
           <div class="prewiev_title">Электричество в подарок</div>
           <div class="prewiev_text">При покупке от 999 999 мы дарим вам электрическую проводку, светильник и люстру в подарок с бесплатной установкой</div>
@@ -194,7 +197,7 @@
               39 шт. или 34 шт., в зависимости от завода-производителя.
             </a><br>
             <a class="window_price">199 РУБ</a><br>
-            <a href="#"><button id="dialog" class="WbuyIt" type="button" name="button">В корзину</button></a>
+            <a href="#"><button id="dialog" class="WbuyIt product2" type="button" name="button">В корзину</button></a>
           </div>
           <div id="product3" class="window_of_product">
             <a href="#"><button id="dialog" class="clsIt" type="button" name="button">Закрыть</button></a>
@@ -337,5 +340,8 @@
     function formIsDone() {
       alert('Форма успешно отправлена')
     }
+    var y = document.getElementById('dialog');
+    document.getElementByClass('product2');
+    console.log(y)
   </script>
 </html>
